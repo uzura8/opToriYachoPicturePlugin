@@ -1,0 +1,6 @@
+ashiatoHomeList:
+  caption:
+    ja_JP: "鳥写真"
+  description:
+    ja_JP: "鳥写真"
+  component: [yachoPicture, yachoPictureHomeList]
