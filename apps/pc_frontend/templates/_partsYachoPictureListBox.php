@@ -9,10 +9,9 @@
 
 <table>
 <tbody>
-<ul class="articleList">
-    <li><?php echo $options['toriName']; ?></li>
-    <li><?php echo ' ＾3＾)ﾉ '; ?></li>
-</ul>
+
+<p><?php echo $options['toriName']; ?></p>
+<p><img src="<?php echo $options['toriPicture']->url; ?>" width="200"></p>
 
 <?php if (isset($options['moreInfo'])): ?>
 <div class="moreInfo"><ul class="moreInfo"><li>

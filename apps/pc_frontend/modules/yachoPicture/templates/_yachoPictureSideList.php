@@ -1,10 +1,9 @@
 <?php
 include_parts(
   'YachoPictureListBox',
-  'yachoPictureHomeList',
+  'yachoPictureSideList',
   array(
     'title' => '鳥写真',
-    'toriPicture' => $toriPicture,
     'toriName' => $toriName,
     'moreInfo' => 'yachoPicture/list'
   )
