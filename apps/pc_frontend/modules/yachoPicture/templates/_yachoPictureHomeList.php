@@ -4,8 +4,10 @@ include_parts(
   'yachoPictureHomeList',
   array(
     'title' => '鳥写真',
-    'toriPicture' => $toriPicture,
     'toriName' => $toriName,
+    'imageUrl' => $imageUrl,
+    'linkUrl' => $linkUrl,
+    'imageWidth' => $imageWidth,
     'moreInfo' => 'yachoPicture/list'
   )
 );

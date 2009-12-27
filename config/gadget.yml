@@ -2,5 +2,5 @@ yachoPictureHomeList:
   caption:
     ja_JP: "鳥写真"
   description:
-    ja_JP: "鳥写真"
+    ja_JP: "鳥写真を表示します"
   component: [yachoPicture, yachoPictureHomeList]
