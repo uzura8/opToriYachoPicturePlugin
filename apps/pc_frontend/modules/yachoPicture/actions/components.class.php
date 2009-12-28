@@ -213,6 +213,11 @@ class yachoPictureComponents extends sfComponents
 
     $i = mt_rand(0, 7);
     $this->imageUrl = $results[$i]->url;
+
+    $wikiApiUrl = "http://wikipedia.simpleapi.net/api?keyword=".$toriName."&output=xml";
+    $xmlData = file_get_contents($wikiApiUrl);
+    $xml = simplexml_load_string($xmlData);
+    $this->wikiData = $xml[0]->result->body;
   }
 
   public function executeYachoPictureSideList()
@@ -420,5 +425,10 @@ class yachoPictureComponents extends sfComponents
 
     $i = mt_rand(0, 7);
     $this->imageUrl = $results[$i]->url;
+
+    $wikiApiUrl = "http://wikipedia.simpleapi.net/api?keyword=".$toriName."&output=xml";
+    $xmlData = file_get_contents($wikiApiUrl);
+    $xml = simplexml_load_string($xmlData);
+    $this->wikiData = $xml[0]->result->body;
   }
 }
