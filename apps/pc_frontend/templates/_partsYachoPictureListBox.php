@@ -12,7 +12,6 @@
 
 <p style="text-align:center;"><a href="<?php echo $options['linkUrl']; ?>" target="_blank"><img src="<?php echo $options['imageUrl']; ?>" width="<?php echo $options['imageWidth']; ?>" style="display:none" onload="this.style.display='inline'"></a></p>
 <p style="text-align:center;margin-top:10px;"><strong><a href="<?php echo $options['linkUrl']; ?>" target="_blank"><?php echo $options['toriName']; ?></a></strong></p>
-<p style="text-align:center;margin-top:10px;"><?php echo $options['wikiData']; ?></p>
 
 <?php if (isset($options['moreInfo'])): ?>
 <div class="moreInfo"><ul class="moreInfo"><li>

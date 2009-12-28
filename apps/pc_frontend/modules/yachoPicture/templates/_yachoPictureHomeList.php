@@ -8,7 +8,6 @@ include_parts(
     'imageUrl' => $imageUrl,
     'linkUrl' => $linkUrl,
     'imageWidth' => $imageWidth,
-    'wikiData' => $wikiData,
     'moreInfo' => 'yachoPicture/list'
   )
 );
