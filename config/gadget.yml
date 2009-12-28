@@ -4,3 +4,4 @@ yachoPictureHomeList:
   description:
     ja_JP: "鳥写真を表示します"
   component: [yachoPicture, yachoPictureHomeList]
+
