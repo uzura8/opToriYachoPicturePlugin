@@ -386,6 +386,7 @@ class yachoPictureComponents extends sfComponents
     $url = $url."?v=1.0";
     $url = $url."&key=ABQIAAAAOPtPI5yGL-nFD6Z-kVoJxxQmO4LSR-cwvAgRQxlrUu2LJmLSXBRZ6rnUtzFGACVM0FRb2UWlx4CCpg";
     $url = $url."&rsz=large";
+    $url = $url."&safe=active";
     $url = $url."&q=".$urlString;
 
     // sendRequest
