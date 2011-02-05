@@ -10,7 +10,7 @@
 <table>
 <tbody>
 
-<?php if (sfConfig::get('app_tori_yacho_picture_is_enable_wiki_link')): ?>
+<?php if (Doctrine::getTable('SnsConfig')->get('op_tori_yacho_picture_plugin_use_wiki_link', true)): ?>
 <p style="text-align:center;"><a href="<?php echo $options['linkUrl']; ?>" target="_blank"><img src="<?php echo $options['imageUrl']; ?>" width="<?php echo $options['imageWidth']; ?>" style="display:none" onload="this.style.display='inline'"></a></p>
 <p style="text-align:center;margin-top:10px;"><strong><a href="<?php echo $options['linkUrl']; ?>" target="_blank"><?php echo $options['toriName']; ?></a></strong></p>
 <?php else: ?>

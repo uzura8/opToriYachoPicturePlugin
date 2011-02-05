@@ -2,7 +2,5 @@ all:
   tori_yacho_picture:
     image_width_side:               150 # (px)サイドバナー領域に表示する画像サイズ
     image_width_contents:           250 # (px)コンテンツ領域に表示する画像サイズ
-    is_enable_wiki_link:           true # wikipediaへのリンクを有効にするか？
-    is_enable_safe_search_mode:    true # google画像検索APIのsafeサーチモードを有効にするか
     is_enable_search_result_cache: true # 画像検索結果をキャッシュするか(キャッシュは cc するまで有効)
     google_api_key: 'ABQIAAAAOPtPI5yGL-nFD6Z-kVoJxxQmO4LSR-cwvAgRQxlrUu2LJmLSXBRZ6rnUtzFGACVM0FRb2UWlx4CCpg'
