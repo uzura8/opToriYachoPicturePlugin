@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.0" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+ <name>opToriYachoPicturePlugin</name>
+ <channel>plugins.openpne.jp</channel>
+ <summary>野鳥の知識を深める</summary>
+ <description>== ■プラグイン概要
+サイド領域にランダムで野鳥写真を掲載し、SNSユーザの野鳥のの知識・関心をを深めるのに一役買う
+
+== ■開発履歴
+* 2009-12-27: α版完成
+* 2011-01-23: safeサーチモードに対応
+* 2011-02-05: バージョン0.1.0 リリース
+
+== ■バージョン情報
+=== 0.1.0
+* 画像検索結果のキャッシュ対応
+* 各種パラメータを設定ファイルで設定可能にした
+** config/app.yml
+
+【設定値】
+* 表示する画像サイズ
+** wikipediaへのリンクを有効にするか
+** google画像検索APIのsafeサーチモードを有効にするか
+** 画像検索結果をキャッシュするか</description>
+ <lead>
+  <name>Shingo Yamada</name>
+  <user>shingo</user>
+  <email />
+  <active>yes</active>
+ </lead>
+ <date>2011-02-05</date>
+ <time>15:39:52</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license>PHP</license>
+ <notes>
+First beta release.
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="7199e4bf18998097abaf8e4bbbbb5624" name="apps/pc_frontend/modules/yachoPicture/actions/actions.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="e1720f0d3adf3587366e23fa76f08aaf" name="apps/pc_frontend/modules/yachoPicture/actions/components.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="apps/pc_frontend/modules/yachoPicture/templates/indexSuccess.php" role="data" />
+   <file baseinstalldir="/" md5sum="01f996919a31599d1820154a24ddce05" name="apps/pc_frontend/modules/yachoPicture/templates/_yachoPictureHomeList.php" role="data" />
+   <file baseinstalldir="/" md5sum="ac2464833141e06497a00a22235d9248" name="apps/pc_frontend/modules/yachoPicture/templates/_yachoPictureSideList.php" role="data" />
+   <file baseinstalldir="/" md5sum="581681d9ceb316384495eb9aa55ac45c" name="apps/pc_frontend/templates/_partsYachoPictureListBox.php" role="data" />
+   <file baseinstalldir="/" md5sum="50a561cfd66752e905fd5d00ff9320a9" name="config/app.yml" role="data" />
+   <file baseinstalldir="/" md5sum="8c6dd4c570eac4630dbb31f99d8e3c64" name="config/gadget.yml" role="data" />
+   <file baseinstalldir="/" md5sum="8ca1f77a28031c4b3d9747dc8b3affdc" name="config/side_banner_gadget.yml" role="data" />
+   <file baseinstalldir="/" md5sum="1bcce5abae38167b9bfb57a3e6a65d15" name="lib/opToriYachoPicturePluginToolkit.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="25b04d5e2306bbc79824f120dc88d181" name="test/bootstrap/database.php" role="data" />
+   <file baseinstalldir="/" md5sum="2089e76b9d0ae0fd4d222ee37ea68cb5" name="test/bootstrap/functional.php" role="data" />
+   <file baseinstalldir="/" md5sum="4bfa4b596e946c8a283410a2e2ba4315" name="test/bootstrap/unit.php" role="data" />
+   <file baseinstalldir="/" md5sum="8471fade12b0760fab6715ffb8b8f9e4" name="test/fixtures/test_data.yml" role="data" />
+   <file baseinstalldir="/" md5sum="8a98cacfcc151f2808c399543fd52679" name="test/functional/mobile_frontend/skeletonActionsTest.php" role="data" />
+   <file baseinstalldir="/" md5sum="1faa199e87c1ce270e86edee706b37fd" name="test/functional/pc_frontend/skeletonActionsTest.php" role="data" />
+   <file baseinstalldir="/" md5sum="52440ab0abcc01c98551283f1e9942e1" name="test/unit/model/SkeletonTest.php" role="data" />
+   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="README" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.3</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2011-02-05</date>
+   <license>PHP</license>
+   <notes>
+First beta release.
+   </notes>
+  </release>
+ </changelog>
+</package>
