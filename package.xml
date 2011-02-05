@@ -13,18 +13,15 @@
 * 2009-12-27: α版完成
 * 2011-01-23: safeサーチモードに対応
 * 2011-02-05: バージョン0.1.0 リリース
+* 2011-02-05: バージョン0.2.0 リリース
 
 == ■バージョン情報
 === 0.1.0
 * 画像検索結果のキャッシュ対応
 * 各種パラメータを設定ファイルで設定可能にした
-** config/app.yml
 
-【設定値】
-* 表示する画像サイズ
-** wikipediaへのリンクを有効にするか
-** google画像検索APIのsafeサーチモードを有効にするか
-** 画像検索結果をキャッシュするか</description>
+=== 0.2.0
+* 管理画面で設定値を変更可能にした</description>
  <lead>
   <name>Shingo Yamada</name>
   <user>shingo</user>
@@ -32,10 +29,10 @@
   <active>yes</active>
  </lead>
  <date>2011-02-05</date>
- <time>15:39:52</time>
+ <time>23:59:40</time>
  <version>
-  <release>0.1.0</release>
-  <api>0.1.0</api>
+  <release>0.2.0</release>
+  <api>0.2.0</api>
  </version>
  <stability>
   <release>beta</release>
@@ -43,20 +40,23 @@
  </stability>
  <license>PHP</license>
  <notes>
-First beta release.
+Add backend page
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="40db5c16f4fdc0a7c3f239b330f9d853" name="apps/pc_backend/modules/opToriYachoPicturePlugin/actions/actions.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="32f4f01a78a1ee89848adf0d56ceaa54" name="apps/pc_backend/modules/opToriYachoPicturePlugin/templates/indexSuccess.php" role="data" />
    <file baseinstalldir="/" md5sum="7199e4bf18998097abaf8e4bbbbb5624" name="apps/pc_frontend/modules/yachoPicture/actions/actions.class.php" role="data" />
-   <file baseinstalldir="/" md5sum="e1720f0d3adf3587366e23fa76f08aaf" name="apps/pc_frontend/modules/yachoPicture/actions/components.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="80feeb9dfd6731d7ba1e3a47fc46a64f" name="apps/pc_frontend/modules/yachoPicture/actions/components.class.php" role="data" />
    <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="apps/pc_frontend/modules/yachoPicture/templates/indexSuccess.php" role="data" />
-   <file baseinstalldir="/" md5sum="01f996919a31599d1820154a24ddce05" name="apps/pc_frontend/modules/yachoPicture/templates/_yachoPictureHomeList.php" role="data" />
-   <file baseinstalldir="/" md5sum="ac2464833141e06497a00a22235d9248" name="apps/pc_frontend/modules/yachoPicture/templates/_yachoPictureSideList.php" role="data" />
-   <file baseinstalldir="/" md5sum="581681d9ceb316384495eb9aa55ac45c" name="apps/pc_frontend/templates/_partsYachoPictureListBox.php" role="data" />
-   <file baseinstalldir="/" md5sum="50a561cfd66752e905fd5d00ff9320a9" name="config/app.yml" role="data" />
+   <file baseinstalldir="/" md5sum="c2f062906492aba8ac27439a8560c1dc" name="apps/pc_frontend/modules/yachoPicture/templates/_yachoPictureHomeList.php" role="data" />
+   <file baseinstalldir="/" md5sum="44e23da5a4d5f29e9e844626e8c20c62" name="apps/pc_frontend/modules/yachoPicture/templates/_yachoPictureSideList.php" role="data" />
+   <file baseinstalldir="/" md5sum="f72ee6c30b3f78aab3d2e7ffd756cff2" name="apps/pc_frontend/templates/_partsYachoPictureListBox.php" role="data" />
+   <file baseinstalldir="/" md5sum="21a2c4a029657a5af71084c8df04453f" name="config/app.yml" role="data" />
    <file baseinstalldir="/" md5sum="8c6dd4c570eac4630dbb31f99d8e3c64" name="config/gadget.yml" role="data" />
    <file baseinstalldir="/" md5sum="8ca1f77a28031c4b3d9747dc8b3affdc" name="config/side_banner_gadget.yml" role="data" />
-   <file baseinstalldir="/" md5sum="1bcce5abae38167b9bfb57a3e6a65d15" name="lib/opToriYachoPicturePluginToolkit.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="2a44397857f39775a2777897a332eb1f" name="lib/form/opToriYachoPicturePluginConfigurationForm.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="6de297573ad89275ad889f8eb4ae544a" name="lib/util/opToriYachoPicturePluginToolkit.class.php" role="data" />
    <file baseinstalldir="/" md5sum="25b04d5e2306bbc79824f120dc88d181" name="test/bootstrap/database.php" role="data" />
    <file baseinstalldir="/" md5sum="2089e76b9d0ae0fd4d222ee37ea68cb5" name="test/bootstrap/functional.php" role="data" />
    <file baseinstalldir="/" md5sum="4bfa4b596e946c8a283410a2e2ba4315" name="test/bootstrap/unit.php" role="data" />
@@ -92,6 +92,21 @@ First beta release.
    <license>PHP</license>
    <notes>
 First beta release.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.2.0</release>
+    <api>0.2.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2011-02-05</date>
+   <license>PHP</license>
+   <notes>
+Add backend page
    </notes>
   </release>
  </changelog>
